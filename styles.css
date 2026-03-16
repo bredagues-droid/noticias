@@ -1,0 +1,183 @@
+/* ESTILOS GENERALES */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#FFDA78;
+}
+
+header{
+background:#003285 url(IMAGENES/portada.jpg);
+color:white;
+text-align:center;
+padding:70px;
+}
+
+nav{
+background:#2A629A;
+text-align:center;
+padding:15px;
+}
+
+/* MENÚ */
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+padding:10px 15px;
+transition:0.3s;
+border-radius:5px;
+}
+
+nav a:hover{
+background:#FF7F3E;
+transform:scale(1.1);
+}
+
+/* CONTENIDO */
+
+#contenido{
+width:80%;
+margin:auto;
+background:white;
+padding:20px;
+min-height:500px;
+}
+
+/* TARJETAS DE NOTICIAS */
+
+.noticia{
+border-bottom:1px solid #ddd;
+padding:15px 0;
+display:flex;
+gap:20px;
+}
+
+.noticia img{
+width:200px;
+height:130px;
+object-fit:cover;
+border-radius:5px;
+}
+
+.noticia h3{
+color:#003285;
+margin:0;
+}
+
+.noticia p{
+color:#333;
+}
+
+/* GRID PARA NOTICIAS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card{
+background:#f5f5f5;
+padding:15px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+.card h3{
+color:#003285;
+}
+
+/* SLIDER */
+
+.slider{
+width:100%;
+height:350px;
+overflow:hidden;
+position:relative;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+@keyframes slide{
+
+0%{margin-left:0;}
+
+30%{margin-left:0;}
+
+35%{margin-left:-100%;}
+
+65%{margin-left:-100%;}
+
+70%{margin-left:-200%;}
+
+100%{margin-left:-200%;}
+
+}
+
+/* TITULOS */
+
+h2{
+color:#003285;
+border-left:5px solid #FF7F3E;
+padding-left:10px;
+}
+
+/* FORMULARIO */
+
+form{
+width:400px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#FF7F3E;
+border:none;
+padding:10px;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#003285;
+}
+
+/* FOOTER */
+
+footer{
+background:#003285;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
